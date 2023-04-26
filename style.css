@@ -1,0 +1,102 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+
+header {
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #6070ff;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 18px;
+  gap: 10px;
+}
+
+.intro p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #344563;
+  line-height: 24px;
+}
+
+.intro .text {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 72px;
+  margin-bottom: -40px;
+  color: #172b4d;
+}
+
+.intro .socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.socials h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7f8cff;
+  margin: 0 8px;
+}
+
+.social-icon {
+  display: flex;
+  order: 3;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-icon li a {
+  text-decoration: none;
+}
+
+.social-icon img {
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 375px) {
+  .background {
+    min-height: 100vh;
+    background: url('./assets/mobile-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .intro {
+    position: absolute;
+    top: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .background {
+    background: none;
+  }
+}
