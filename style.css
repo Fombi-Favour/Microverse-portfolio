@@ -182,7 +182,6 @@ nav a {
   padding: 114px 24px;
   border-top-right-radius: 60px;
   margin-top: 30%;
-  margin-bottom: 30px;
 }
 
 .resume {
@@ -191,7 +190,7 @@ nav a {
 
 .skills {
   width: 327px;
-  padding: 0;
+  padding: 50% 0;
 }
 
 .dropdown {
@@ -234,6 +233,66 @@ nav a {
   font-size: 15px;
   font-weight: 500;
   color: #253858;
+}
+
+.contact-me {
+  background: #6070ff;
+  padding: 114px 24px;
+  border-top-left-radius: 100px;
+  margin-top: -20%;
+}
+
+.shapes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #fff;
+  background: url(./assets/shapes.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.shapes h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.shapes p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ebebff;
+}
+
+.input-col {
+  width: 327px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #172b4d;
+}
+
+.comment {
+  height: 170px;
+  padding: 12px;
+}
+
+.comment::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #b3bac5;
+  padding: 10px;
+}
+
+.contact {
+  width: 142px;
 }
 
 @media only screen and (min-width: 375px) {
