@@ -5,11 +5,14 @@
 body {
   padding: 0;
   margin: 0;
-  background: #fff;
+  background: #e5e5e5;
 }
 
 header {
   padding: 10px 0;
+  background: #fff;
+  min-height: 130vh;
+  border-bottom-left-radius: 50px;
 }
 
 header nav {
@@ -24,6 +27,10 @@ nav a {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
+}
+
+.background {
+  margin: 30px 0;
 }
 
 .intro {
@@ -80,18 +87,104 @@ nav a {
   padding: 0 10px;
 }
 
+.projects {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-row {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.project-row h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.project-row p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+}
+
+.project-row .content {
+  display: flex;
+  margin-top: -30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.content h3 {
+  color: #7a869a;
+  padding: 0 10px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+}
+
+.tag li {
+  background: #ebebff;
+  list-style: none;
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: #6070ff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.btn-detail {
+  width: 126px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  transition: 0.5s;
+}
+
+.btn-detail:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn-detail:active {
+  background: #2230d2;
+}
+
 @media only screen and (min-width: 375px) {
   .background {
     min-height: 100vh;
-    background: url('./assets/mobile-bg.png');
+    background: url('./assets/mobile-bg.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: contain;
+    position: relative;
   }
 
   .intro {
     position: absolute;
-    top: 150px;
+    top: 80px;
   }
 }
 
