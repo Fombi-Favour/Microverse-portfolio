@@ -41,14 +41,15 @@ nav a {
   gap: 10px;
 }
 
-.intro p {
+.intro-text {
   font-size: 16px;
   font-weight: 400;
   color: #344563;
   line-height: 24px;
+  padding-top: 12px;
 }
 
-.intro .text {
+.text {
   display: flex;
   align-items: center;
   font-size: 30px;
@@ -153,12 +154,14 @@ nav a {
 .btn-detail {
   width: 126px;
   height: 48px;
+  background: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 0.03em;
   color: #396df2;
+  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -170,6 +173,67 @@ nav a {
 
 .btn-detail:active {
   background: #2230d2;
+}
+
+.about-me {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 114px 24px;
+  border-top-right-radius: 60px;
+  margin-top: 30%;
+  margin-bottom: 30px;
+}
+
+.resume {
+  width: 200px;
+}
+
+.skills {
+  width: 327px;
+  padding: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.border {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.lang h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.list {
+  padding: 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 303px;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+
+.item p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #253858;
 }
 
 @media only screen and (min-width: 375px) {
