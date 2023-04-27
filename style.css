@@ -133,6 +133,10 @@ nav a {
   padding: 0 10px;
 }
 
+.author {
+  color: #344563;
+}
+
 .tag {
   display: flex;
   align-items: center;
