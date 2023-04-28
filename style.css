@@ -249,6 +249,7 @@ nav a {
 .shapes {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
   color: #fff;
   background: url(./assets/shapes.svg);
@@ -283,9 +284,14 @@ nav a {
   color: #172b4d;
 }
 
+.input-col::placeholder {
+  color: #172b4d;
+}
+
 .comment {
   height: 170px;
   padding: 12px;
+  resize: none;
 }
 
 .comment::placeholder {
@@ -297,6 +303,8 @@ nav a {
 
 .contact {
   width: 142px;
+  margin-top: 20px;
+  margin-left: -12px;
 }
 
 @media only screen and (min-width: 375px) {
