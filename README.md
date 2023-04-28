@@ -30,9 +30,9 @@
 - [📝 License](#license)
 
 
-# 📖 Portfolio: setup and mobile first <a name="about-project"></a>
+# 📖 Microverse Portfolio project <a name="about-project"></a>
 
-**Portfolio: setup and mobile first** is a Microverse portfolio project with version control system like git, HTML and CSS.
+**Microverse Portfolio project** is a responsive portfolio project with version control system like git, and frontend languages like HTML and CSS.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,8 +56,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Beautiful mobile layouts**
 - **Site with nice styles**
 
@@ -65,8 +63,6 @@
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -112,6 +108,14 @@ You can deploy this project on github following instructions here:
 - GitHub: [Fombi-Favour](https://github.com/Fombi-Favour)
 - Twitter: [@FavourFombi](https://twitter.com/FavourFombi)
 - LinkedIn: [Fombi Favour](https://www.linkedin.com/in/fombi-favour/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+-  **Add details project page with live demo and viewing of source code**
+-  **Add Desktop platform features**
+-  **Customization of styles of the two platforms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
