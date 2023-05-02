@@ -172,12 +172,13 @@
         <main class="shapes">
             <h1>Contact me</h1>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
-            <input type="text" placeholder="Lorem Ipsum" class="input-col">
-            <input type="email" placeholder="loremipsum@gmail.com" class="input-col">
-            <textarea class="input-col comment" placeholder="Write your message here..."></textarea>
-            
+            <form action="https://formspree.io/f/xvonlaqn" method="POST">
+                <input type="text" name="name" placeholder="Lorem Ipsum" maxlength="30" class="input-col" required>
+                <input type="email" name="email" placeholder="loremipsum@gmail.com" class="input-col" required>
+                <textarea class="input-col comment" name="message" maxlength="500" placeholder="Write your message here..." required></textarea>
+                <button type="submit" class="btn-detail contact">Get in touch</button>
+            </form>
         </main>
-        <button type="button" class="btn-detail contact">Get in touch</button>
     </footer>
 </body>
 </html>

@@ -22,7 +22,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#deployment)
-- [👥 Author](#authors)
+- [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -101,13 +101,19 @@ You can deploy this project on github following instructions here:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Fombi Magnus-Favour**
 
 - GitHub: [Fombi-Favour](https://github.com/Fombi-Favour)
 - Twitter: [@FavourFombi](https://twitter.com/FavourFombi)
 - LinkedIn: [Fombi Favour](https://www.linkedin.com/in/fombi-favour/)
+
+👤 **Iwu John**
+
+- GitHub: [maths29](https://github.com/maths29)
+- Twitter: [@maths29](https://twitter.com/maths29)
+- LinkedIn: [Iwu John](https://www.linkedin.com/in/iwu-john-b92b01148/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
