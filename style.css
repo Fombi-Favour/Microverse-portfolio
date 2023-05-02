@@ -19,7 +19,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 16px;
 }
 
 nav a {
@@ -284,6 +284,7 @@ nav a {
   border-radius: 10px;
   padding: 0 10px;
   margin-bottom: 12px;
+  outline: none;
   font-size: 17px;
   font-weight: 400;
   color: #172b4d;
