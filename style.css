@@ -143,6 +143,17 @@ nav a {
   padding: 0;
 }
 
+.tag li {
+  float: left;
+  margin: 0 10px;
+  border-radius: 8px;
+  background: #ebebff;
+  padding: 9px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6070ff;
+}
+
 .btn-detail {
   width: 126px;
   height: 48px;
