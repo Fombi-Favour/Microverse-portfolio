@@ -406,7 +406,7 @@ nav a {
   .text {
     font-size: 40px;
     letter-spacing: 0.37px;
-    margin-top: 50px;
+    margin-top: -50px;
     line-height: 100px;
   }
 
@@ -462,9 +462,9 @@ nav a {
     background: #fff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
+    grid-gap: 30px;
     border-top-right-radius: 60px;
-    padding: 120px 200px;
+    padding: 120px 150px;
     margin-top: 10%;
     margin-bottom: 30%;
   }
