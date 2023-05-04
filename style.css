@@ -458,21 +458,22 @@ nav a {
   }
 
   .about-me {
-    min-height: 100vh;
+    min-height: 140vh;
     background: #fff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 9px;
+    grid-gap: 15px;
     border-top-right-radius: 60px;
+    padding: 120px 200px;
     margin-top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 30%;
   }
 
   .skills {
-    width: 684px;
+    width: 484px;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0;
   }
 
   .list {
@@ -496,7 +497,7 @@ nav a {
   }
 
   .contact-me {
-    margin-top: -30%;
+    margin-top: -50%;
     text-align: center;
   }
 
