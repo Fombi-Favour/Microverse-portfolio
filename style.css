@@ -363,11 +363,147 @@ nav a {
     border-bottom-left-radius: 70px;
   }
 
-  nav {
-    position: fixed;
-    top: 0;
+  .link img {
+    display: none;
+  }
+
+  .link ul {
+    display: block;
+  }
+
+  .link ul li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  .link ul li a {
+    color: #344563;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .background {
+    min-height: 100vh;
+    background: url("./assets/Header\ bg.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    margin-top: -40px;
+  }
+
+  .intro {
+    padding: 140px 130px;
+  }
+
+  .text {
+    margin-top: -80px;
+    letter-spacing: 0.37px;
+  }
+
+  .project-row {
+    display: grid;
+    width: 716px;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+  }
+
+  .project-row:nth-child(2n) .left {
+    order: 1;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 28px;
+  }
+
+  .about-me {
+    min-height: 140vh;
     background: #fff;
-    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+    border-top-right-radius: 60px;
+    justify-content: space-between;
+    padding: 120px 30px;
+    margin-top: 10%;
+    margin-bottom: 30%;
+  }
+
+  .top {
+    margin-top: 80px;
+  }
+
+  .skills {
+    width: 364px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 122px;
+    height: 100px;
+    background: #f7f7f9;
+    border-radius: 10px;
+    padding: 10px 8px;
+  }
+
+  .item p {
+    margin-top: 4px;
+  }
+
+  .contact-me {
+    margin-top: -60%;
+    text-align: center;
+  }
+
+  .shapes {
+    min-height: 120vh;
+    background: url(./assets/desktop-shape.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px 90px;
+  }
+
+  .shapes form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-col {
+    width: 447px;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-bottom: 12px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: #172b4d;
+  }
+
+  .comment {
+    height: 170px;
+    padding: 12px;
+    resize: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    min-height: 160vh;
+    border-bottom-left-radius: 70px;
   }
 
   .link img {
@@ -396,24 +532,22 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-top: 30px;
+    margin-top: -100px;
   }
 
   .intro {
-    padding: 100px 250px;
+    padding: 140px 250px;
   }
 
   .text {
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 0.37px;
-    margin-top: -50px;
-    line-height: 100px;
+    margin-top: 0;
   }
 
   .intro-text {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
-    margin-top: -10px;
   }
 
   .projects {
@@ -423,25 +557,24 @@ nav a {
 
   .project-row {
     display: grid;
-    width: 1016px;
-    height: 496px;
-    padding: 0 38px;
+    width: 816px;
+    padding: 30px 60px;
     grid-template-columns: repeat(2, auto);
-    grid-gap: 100px;
+    grid-gap: 60px;
   }
 
   .project-row:nth-child(2n) .left {
     order: 1;
     margin-right: 80px;
     margin-left: 0;
-    width: 440px;
-    height: 445px;
+    width: 240px;
+    height: 245px;
     margin-top: 28px;
   }
 
   .left img {
-    width: 440px;
-    height: 445px;
+    width: 340px;
+    height: 245px;
     margin-top: 28px;
   }
 
@@ -463,14 +596,16 @@ nav a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
+    justify-content: space-between;
     border-top-right-radius: 60px;
-    padding: 120px 150px;
+    padding: 120px 50px;
     margin-top: 10%;
     margin-bottom: 30%;
+    margin-right: 0;
   }
 
   .skills {
-    width: 484px;
+    width: 384px;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -478,7 +613,8 @@ nav a {
 
   .list {
     display: flex;
-    gap: 20px;
+    padding: 0;
+    margin: 0;
   }
 
   .item {
