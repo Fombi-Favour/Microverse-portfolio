@@ -363,6 +363,10 @@ nav a {
     border-bottom-left-radius: 70px;
   }
 
+  header nav {
+    padding: 16px 120px;
+  }
+
   .link img {
     display: none;
   }
@@ -416,7 +420,7 @@ nav a {
   }
 
   .about-me {
-    min-height: 140vh;
+    min-height: 80vh;
     background: #fff;
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -460,7 +464,7 @@ nav a {
   }
 
   .contact-me {
-    margin-top: -60%;
+    margin-top: -40%;
     text-align: center;
   }
 
@@ -504,6 +508,10 @@ nav a {
   header {
     min-height: 160vh;
     border-bottom-left-radius: 70px;
+  }
+
+  header nav {
+    padding: 16px 120px;
   }
 
   .link img {
@@ -591,21 +599,25 @@ nav a {
   }
 
   .about-me {
-    min-height: 140vh;
+    min-height: 80vh;
     background: #fff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     justify-content: space-between;
     border-top-right-radius: 60px;
-    padding: 120px 50px;
+    padding: 120px;
     margin-top: 10%;
     margin-bottom: 30%;
     margin-right: 0;
   }
 
+  .top {
+    margin-top: 0;
+  }
+
   .skills {
-    width: 384px;
+    width: 484px;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -633,7 +645,7 @@ nav a {
   }
 
   .contact-me {
-    margin-top: -50%;
+    margin-top: -40%;
     text-align: center;
   }
 
