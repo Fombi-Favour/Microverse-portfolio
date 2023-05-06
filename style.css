@@ -27,7 +27,7 @@ nav a {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
-  animation: 3s spin-in ;
+  animation: 3s spin-in;
 }
 
 @keyframes spin-in {
@@ -478,12 +478,12 @@ nav a {
   .project-row:hover {
     animation: 3s alternate popup;
   }
-  
+
   @keyframes popup {
     0% {
       width: 600px;
     }
-  
+
     100% {
       width: 716px;
     }
@@ -672,12 +672,12 @@ nav a {
   .project-row:hover {
     animation: 3s alternate popup;
   }
-  
+
   @keyframes popup {
     0% {
       width: 616px;
     }
-  
+
     100% {
       width: 816px;
     }
