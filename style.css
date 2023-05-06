@@ -93,7 +93,6 @@ nav a {
   }
 }
 
-
 .intro .socials {
   display: flex;
   flex-direction: column;
@@ -439,6 +438,26 @@ nav a {
   .text {
     margin-top: -80px;
     letter-spacing: 0.37px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+
+    75% {
+      font-size: 200%;
+      margin-left: 25%;
+      width: 150%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .project-row {
@@ -587,6 +606,26 @@ nav a {
     font-size: 30px;
     letter-spacing: 0.37px;
     margin-top: 0;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+
+    75% {
+      font-size: 200%;
+      margin-left: 25%;
+      width: 150%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .intro-text {
