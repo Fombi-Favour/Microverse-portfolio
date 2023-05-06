@@ -125,6 +125,21 @@ nav a {
   border: 1px solid #dfe1e6;
   border-radius: 24px;
   padding: 16px;
+  transition: 0.4s;
+}
+
+.project-row:hover {
+  animation: 3s alternate-reverse popup;
+}
+
+@keyframes popup {
+  0% {
+    width: 400px;
+  }
+
+  100% {
+    width: 327px;
+  }
 }
 
 .project-row h1 {
