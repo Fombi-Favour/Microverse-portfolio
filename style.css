@@ -71,6 +71,26 @@ nav a {
   line-height: 72px;
   margin-bottom: -40px;
   color: #172b4d;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  75% {
+    font-size: 200%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .intro .socials {
@@ -125,6 +145,21 @@ nav a {
   border: 1px solid #dfe1e6;
   border-radius: 24px;
   padding: 16px;
+  transition: 0.4s;
+}
+
+.project-row:hover {
+  animation: 3s alternate-reverse popup;
+}
+
+@keyframes popup {
+  0% {
+    width: 400px;
+  }
+
+  100% {
+    width: 327px;
+  }
 }
 
 .project-row h1 {
@@ -403,6 +438,26 @@ nav a {
   .text {
     margin-top: -80px;
     letter-spacing: 0.37px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+
+    75% {
+      font-size: 200%;
+      margin-left: 25%;
+      width: 150%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .project-row {
@@ -551,6 +606,26 @@ nav a {
     font-size: 30px;
     letter-spacing: 0.37px;
     margin-top: 0;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+
+    75% {
+      font-size: 200%;
+      margin-left: 25%;
+      width: 150%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .intro-text {
