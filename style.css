@@ -27,6 +27,13 @@ nav a {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
+  animation: 3s spin-in;
+}
+
+@keyframes spin-in {
+  0% {
+    transform: rotate(360deg);
+  }
 }
 
 .link {
@@ -438,24 +445,24 @@ nav a {
   .text {
     margin-top: -80px;
     letter-spacing: 0.37px;
-    animation-duration: 3s;
+    animation-duration: 8s;
     animation-name: slidein;
   }
 
   @keyframes slidein {
     from {
       margin-left: 100%;
-      width: 100%;
+      width: 0;
     }
 
     75% {
       font-size: 200%;
       margin-left: 25%;
-      width: 150%;
+      width: 100%;
     }
 
     to {
-      margin-left: 0%;
+      margin-left: 0;
       width: 100%;
     }
   }
@@ -465,6 +472,21 @@ nav a {
     width: 716px;
     grid-template-columns: repeat(2, auto);
     grid-gap: 20px;
+    transition: 0.4s;
+  }
+
+  .project-row:hover {
+    animation: 3s alternate popup;
+  }
+
+  @keyframes popup {
+    0% {
+      width: 600px;
+    }
+
+    100% {
+      width: 716px;
+    }
   }
 
   .project-row:nth-child(2n) .left {
@@ -644,6 +666,21 @@ nav a {
     padding: 30px 60px;
     grid-template-columns: repeat(2, auto);
     grid-gap: 60px;
+    transition: 0.4s;
+  }
+
+  .project-row:hover {
+    animation: 3s alternate popup;
+  }
+
+  @keyframes popup {
+    0% {
+      width: 616px;
+    }
+
+    100% {
+      width: 816px;
+    }
   }
 
   .project-row:nth-child(2n) .left {
@@ -685,6 +722,29 @@ nav a {
     margin-top: 10%;
     margin-bottom: 30%;
     margin-right: 0;
+    animation: 10s view;
+  }
+
+  @keyframes view {
+    0% {
+      opacity: 0;
+    }
+
+    30% {
+      opacity: 0.5;
+    }
+
+    60% {
+      opacity: 0.8;
+    }
+
+    90% {
+      opacity: 0.85;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 
   .top {
