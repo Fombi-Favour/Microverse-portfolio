@@ -71,7 +71,28 @@ nav a {
   line-height: 72px;
   margin-bottom: -40px;
   color: #172b4d;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  75% {
+    font-size: 200%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 
 .intro .socials {
   display: flex;
