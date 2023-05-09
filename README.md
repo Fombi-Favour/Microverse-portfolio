@@ -61,6 +61,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link. Click here!](https://fombi-favour.github.io/Microverse-portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
