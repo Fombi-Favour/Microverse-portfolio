@@ -22,9 +22,21 @@ header nav {
   padding: 16px;
 }
 
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #6070ff;
+  animation: 3s spin-in;
+}
+
 .link {
   display: flex;
   align-items: center;
+}
+
+.link img {
+  cursor: pointer;
 }
 
 .nav-link ul {
@@ -37,6 +49,10 @@ header nav {
   position: absolute;
   right: 1em;
   top: 30px;
+}
+
+.social-icon li a {
+  text-decoration: none;
 }
 
 .nav-link ul li a {
@@ -57,26 +73,10 @@ header nav {
   letter-spacing: 0.03em;
 }
 
-nav a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 700;
-  color: #6070ff;
-  animation: 3s spin-in;
-}
-
-.social-icon li a {
-  text-decoration: none;
-}
-
 @keyframes spin-in {
   0% {
     transform: rotate(360deg);
   }
-}
-
-.link img {
-  cursor: pointer;
 }
 
 .background {
