@@ -18,11 +18,14 @@
       <nav>
         <a href="#">My Logo</a>
         <div class="link">
-          <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <div class="nav-link" id="navLink">
+            <img src="/assets/close.png" alt="close" />
+            <ul>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
           <img src="./assets/menu.png" alt="logo" />
         </div>
       </nav>
@@ -70,7 +73,7 @@
         </div>
       </div>
     </header>
-    <section class="projects">
+    <section class="projects" id="porfolio">
       <!------ project 1 --->
       <main class="project-row">
         <div class="left">
@@ -112,7 +115,8 @@
             <h3>2018</h3>
           </div>
           <p>
-            A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+            A smart assistant to make driving more safe, efficient, and fun by
+            unlocking your most expensive computer: your car.
           </p>
           <ul class="tag">
             <li>HTML</li>
@@ -138,7 +142,8 @@
             <h3>2015</h3>
           </div>
           <p>
-            Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+            Exploring the future of media in Facebook's first Virtual Reality
+            app; a place to discover and enjoy 360 photos and videos on Gear VR.
           </p>
           <ul class="tag">
             <li>HTML</li>
@@ -164,7 +169,9 @@
             <h3>2015</h3>
           </div>
           <p>
-            Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+            Experimental content creation feature that allows users to add to an
+            existing story over the course of a day without spamming their
+            friends.
           </p>
           <ul class="tag">
             <li>HTML</li>
@@ -176,7 +183,7 @@
         </div>
       </main>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="about">
       <main class="top">
         <h1 class="text">About Myself</h1>
         <p class="intro-text">
@@ -249,7 +256,7 @@
         </div>
       </main>
     </section>
-    <footer class="contact-me">
+    <footer class="contact-me" id="contact">
       <main class="shapes">
         <h1>Contact me</h1>
         <p>
@@ -284,5 +291,6 @@
         </form>
       </main>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
