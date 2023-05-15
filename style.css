@@ -22,28 +22,28 @@ header nav {
   padding: 16px;
 }
 
-.nav-link {
-  background-color: #2230d2;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.95;
-  z-index: 1;
-  text-align: left;
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link ul {
+  display: flex;
+  padding: 0 20px;
+  list-style: none;
 }
 
 .nav-link img {
   position: absolute;
-  right: 10em;
-  top: 20px;
+  right: 1em;
+  top: 30px;
 }
 
-.nav-link ul {
-  list-style: none;
-  margin: 2%;
-  padding: 2%;
+.nav-link ul li a {
+  color: #344563;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .tag li {
@@ -55,10 +55,6 @@ header nav {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.03em;
-}
-
-.nav-link ul li {
-  margin: 2%;
 }
 
 nav a {
@@ -73,33 +69,15 @@ nav a {
   text-decoration: none;
 }
 
-.nav-link ul li a {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  padding: 2%;
-  color: #fff;
-}
-
 @keyframes spin-in {
   0% {
     transform: rotate(360deg);
   }
 }
 
-.link {
-  flex: 1;
-  text-align: right;
-}
-
 .link img {
   cursor: pointer;
 }
-
-/* .link ul {
-  display: none;
-} */
 
 .background {
   min-height: 100vh;
@@ -424,7 +402,37 @@ nav a {
   letter-spacing: 0.03em;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 768px) {
+  .nav-link {
+    position: absolute;
+    top: 0;
+    right: -768px;
+    background-color: #6070ff;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(8px);
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+  }
+
+  .nav-link ul {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+    padding: 0 15px;
+  }
+
+  .nav-link ul li {
+    padding: 12px 0;
+  }
+
+  .nav-link ul li a {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+  }
+
   .background {
     min-height: 100vh;
     background: url("./assets/mobile-bg.svg");
@@ -454,24 +462,16 @@ nav a {
     display: none;
   }
 
-  .link ul {
-    display: block;
-  }
-
-  .link ul li {
+  .nav-link ul li {
     display: inline-block;
     padding: 0 10px;
   }
 
-  .link ul li a {
+  .nav-link ul li a {
     color: #344563;
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
-  }
-
-  .nav-link {
-    display: none;
   }
 
   .background {
@@ -636,20 +636,12 @@ nav a {
     padding: 16px 120px;
   }
 
-  .link img {
-    display: none;
-  }
-
-  .link ul {
-    display: block;
-  }
-
-  .link ul li {
+  .nav-link ul li {
     display: inline-block;
     padding: 0 10px;
   }
 
-  .link ul li a {
+  .nav-link ul li a {
     color: #344563;
     font-size: 15px;
     font-weight: 500;
