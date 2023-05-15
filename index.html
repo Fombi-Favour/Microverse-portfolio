@@ -16,17 +16,17 @@
   <body>
     <header>
       <nav>
-        <a href="#">My Logo</a>
+        <a href="#" id="logo">My Logo</a>
         <div class="link">
           <div class="nav-link" id="navLink">
-            <img src="assets/Icon - Cancel.png"  alt="close" />
+            <img src="assets/close.png" alt="close" onclick="hideMenu()" />
             <ul>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-          <img src="./assets/menu.png" alt="logo" />
+          <img src="./assets/menu.png" id="menu" alt="logo" onclick="showMenu()" />
         </div>
       </nav>
       <div class="background">
@@ -73,7 +73,7 @@
         </div>
       </div>
     </header>
-    <section class="projects" id="porfolio">
+    <section class="projects" id="portfolio">
       <!------ project 1 --->
       <main class="project-row">
         <div class="left">
