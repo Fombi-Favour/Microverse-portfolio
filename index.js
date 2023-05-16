@@ -5,3 +5,5 @@ function showMenu() {
 function hideMenu() {
   navLink.style.right = '-768px';
 }
+
+export default { showMenu, hideMenu };
