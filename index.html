@@ -14,36 +14,86 @@
     <title>Microverse Portfolio</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#" id="logo">My Logo</a>
-        <div class="link">
-          <div class="nav-link" id="navLink">
-            <img src="assets/close.png" id="close" alt="close" />
-            <ul>
-              <li id="Portfolio" onclick="hideMenu()"><a href="#portfolio">Portfolio</a></li>
-              <li id="About-me" onclick="hideMenu()"><a href="#about">About</a></li>
-              <li id="Contact-me" onclick="hideMenu()"><a href="#contact">Contact</a></li>
-            </ul>
+    <div id="blur" class="blurred">
+      <header>
+        <nav>
+          <a href="#" id="logo">My Logo</a>
+          <div class="link">
+            <div class="nav-link" id="navLink">
+              <img src="assets/close.png" id="close" alt="close" />
+              <ul>
+                <li id="Portfolio" onclick="hideMenu()">
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li id="About-me" onclick="hideMenu()">
+                  <a href="#about">About</a>
+                </li>
+                <li id="Contact-me" onclick="hideMenu()">
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <img src="./assets/menu.png" id="menu" alt="logo" />
           </div>
-          <img src="./assets/menu.png" id="menu" alt="logo" />
-        </div>
-      </nav>
-      <div class="background">
-        <div class="intro">
-          <div class="text">
-            <h1>
-              I'm Favour. <br />
-              Glad to see you!
-            </h1>
-          </div>
-          <p class="intro-text">
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hesitate to
-            contact me.
-          </p>
+        </nav>
+        <div class="background">
+          <div class="intro">
+            <div class="text">
+              <h1>
+                I'm Favour. <br />
+                Glad to see you!
+              </h1>
+            </div>
+            <p class="intro-text">
+              I’m a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don’t
+              hesitate to contact me.
+            </p>
 
+            <div class="socials">
+              <h5>LET'S CONNECT</h5>
+              <ul class="social-icon">
+                <li>
+                  <a href="#">
+                    <img src="./assets/twitter.svg" alt="twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/Linkedin icon.svg" alt="Linkedin" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/medium.svg" alt="medium" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/github.svg" alt="github" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/angellist.svg" alt="angellist" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="projects" id="portfolio"></section>
+      <section class="about-me" id="about">
+        <main class="top">
+          <h1 class="text">About Myself</h1>
+          <p class="intro-text">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website. Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hesitate to contact me.
+          </p>
           <div class="socials">
             <h5>LET'S CONNECT</h5>
             <ul class="social-icon">
@@ -70,227 +120,124 @@
               </li>
             </ul>
           </div>
+          <button type="button" class="btn-detail resume">Get my resume</button>
+        </main>
+
+        <main class="skills">
+          <div class="dropdown">
+            <div class="lang">
+              <h3>Languages</h3>
+              <img src="./assets/arrow.png" alt="arrow" />
+            </div>
+            <div class="list">
+              <div class="item">
+                <img src="./assets/lang1.png" alt="lang1" />
+                <p>JavaScript</p>
+              </div>
+              <div class="item">
+                <img src="./assets/lang2.png" alt="lang2" />
+                <p>HTML</p>
+              </div>
+              <div class="item">
+                <img src="./assets/lang3.png" alt="lang3" />
+                <p>CSS</p>
+              </div>
+            </div>
+          </div>
+          <!-------- Frameworks ----->
+          <div class="dropdown border">
+            <div class="lang">
+              <h3>Frameworks</h3>
+              <img src="./assets/arrow2.png" alt="arrow" />
+            </div>
+          </div>
+          <!-------- Frameworks ----->
+          <div class="dropdown border">
+            <div class="lang">
+              <h3>Skills</h3>
+              <img src="./assets/arrow2.png" alt="arrow" />
+            </div>
+          </div>
+        </main>
+      </section>
+      <footer class="contact-me" id="contact">
+        <main class="shapes">
+          <h1>Contact me</h1>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it!
+          </p>
+          <form action="https://formspree.io/f/xvonlaqn" method="POST">
+            <input
+              type="text"
+              name="name"
+              placeholder="Lorem Ipsum"
+              maxlength="30"
+              class="input-col"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="loremipsum@gmail.com"
+              class="input-col"
+              required
+            />
+            <textarea
+              class="input-col comment"
+              name="message"
+              maxlength="500"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+            <button type="submit" class="btn-detail contact">
+              Get in touch
+            </button>
+          </form>
+        </main>
+      </footer>
+    </div>
+    <!-- pop-up detail page -->
+    <div id="pop" class="popup-window">
+      <div class="pop-up">
+        <div class="main-text">
+          <div class="main1">
+            <h2 class="title"></h2>
+            <img src="./assets/cancel.png" class="close" alt="cancel" />
+          </div>
+          <div class="content spec">
+            <h3 class="author"></h3>
+            <img src="./assets/Counter.svg" alt="dot" />
+            <h3 class="specs"></h3>
+            <img src="./assets/Counter.svg" alt="dot" />
+            <h3 class="specs"></h3>
+          </div>
+        </div>
+        <img src="." class="project-image" alt="project" />
+        <div class="block">
+          <div class="scroll">
+            <p class="description"></p>
+          </div>
+          <div class="other-side">
+            <ul class="tag"></ul>
+            <div class="line"></div>
+            <div class="actions">
+              <a href="" target="blank_" class="btn-detail live">
+                <span>See live</span>
+                <img src="./assets/live.png" alt="live" />
+              </a>
+              <a href="" class="btn-detail source">
+                <span>See source</span>
+                <img src="./assets/source.png" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
-    <section class="projects" id="portfolio">
-      <!------ project 1 --->
-      <main class="project-row">
-        <div class="left">
-          <img src="./assets/project1.svg" alt="project-1" />
-        </div>
-        <div class="right">
-          <h1>Tonic</h1>
-          <div class="content">
-            <h3 class="author">CANOPY</h3>
-            <img src="./assets/Counter.svg" alt="dot" />
-            <h3>Back End Dev</h3>
-            <img src="./assets/Counter.svg" alt="dot" />
-            <h3>2015</h3>
-          </div>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="tag">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <button type="button" class="btn-detail">See project</button>
-        </div>
-      </main>
-      <!------ project 2 --->
-      <main class="project-row">
-        <div class="left">
-          <img src="./assets/project2.svg" alt="project-1" />
-        </div>
-        <div class="right">
-          <h1>Uber Navigation</h1>
-          <div class="content">
-            <h3 class="author">Uber</h3>
-            <img src="./assets/Counter.svg" alt="dot" />
-            <h3>Lead Developer</h3>
-            <img src="./assets/Counter.svg" alt="dot" />
-            <h3>2018</h3>
-          </div>
-          <p>
-            A smart assistant to make driving more safe, efficient, and fun by
-            unlocking your most expensive computer: your car.
-          </p>
-          <ul class="tag">
-            <li>HTML</li>
-            <li>Ruby on Rails</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <button type="button" class="btn-detail">See project</button>
-        </div>
-      </main>
-      <!------ project 3 --->
-      <main class="project-row">
-        <div class="left">
-          <img src="./assets/project3.svg" alt="project-1" />
-        </div>
-        <div class="right">
-          <h1>Facebook 360</h1>
-          <div class="content">
-            <h3 class="author">FACEBOOK</h3>
-            <img src="./assets/Counter.svg" alt="dot" />
-            <h3>Full Stack Dev</h3>
-            <img src="./assets/Counter.svg" alt="dot" />
-            <h3>2015</h3>
-          </div>
-          <p>
-            Exploring the future of media in Facebook's first Virtual Reality
-            app; a place to discover and enjoy 360 photos and videos on Gear VR.
-          </p>
-          <ul class="tag">
-            <li>HTML</li>
-            <li>Ruby on Rails</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <button type="button" class="btn-detail">See project</button>
-        </div>
-      </main>
-      <!------ project 4 --->
-      <main class="project-row">
-        <div class="left">
-          <img src="./assets/project4.svg" alt="project-1" />
-        </div>
-        <div class="right">
-          <h1>Multi-Post Stories</h1>
-          <div class="content">
-            <h3 class="author">FACEBOOK</h3>
-            <img src="./assets/Counter.svg" alt="dot" />
-            <h3>Full Stack Dev</h3>
-            <img src="./assets/Counter.svg" alt="dot" />
-            <h3>2015</h3>
-          </div>
-          <p>
-            Experimental content creation feature that allows users to add to an
-            existing story over the course of a day without spamming their
-            friends.
-          </p>
-          <ul class="tag">
-            <li>HTML</li>
-            <li>Ruby on Rails</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <button type="button" class="btn-detail">See project</button>
-        </div>
-      </main>
-    </section>
-    <section class="about-me" id="about">
-      <main class="top">
-        <h1 class="text">About Myself</h1>
-        <p class="intro-text">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website. Look through some of my work and experience! If
-          you like what you see and have a project you need coded, don’t
-          hesitate to contact me.
-        </p>
-        <div class="socials">
-          <h5>LET'S CONNECT</h5>
-          <ul class="social-icon">
-            <li>
-              <a href="#"> <img src="./assets/twitter.svg" alt="twitter" /> </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/Linkedin icon.svg" alt="Linkedin" />
-              </a>
-            </li>
-            <li>
-              <a href="#"> <img src="./assets/medium.svg" alt="medium" /> </a>
-            </li>
-            <li>
-              <a href="#"> <img src="./assets/github.svg" alt="github" /> </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/angellist.svg" alt="angellist" />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <button type="button" class="btn-detail resume">Get my resume</button>
-      </main>
-
-      <main class="skills">
-        <div class="dropdown">
-          <div class="lang">
-            <h3>Languages</h3>
-            <img src="./assets/arrow.png" alt="arrow" />
-          </div>
-          <div class="list">
-            <div class="item">
-              <img src="./assets/lang1.png" alt="lang1" />
-              <p>JavaScript</p>
-            </div>
-            <div class="item">
-              <img src="./assets/lang2.png" alt="lang2" />
-              <p>HTML</p>
-            </div>
-            <div class="item">
-              <img src="./assets/lang3.png" alt="lang3" />
-              <p>CSS</p>
-            </div>
-          </div>
-        </div>
-        <!-------- Frameworks ----->
-        <div class="dropdown border">
-          <div class="lang">
-            <h3>Frameworks</h3>
-            <img src="./assets/arrow2.png" alt="arrow" />
-          </div>
-        </div>
-        <!-------- Frameworks ----->
-        <div class="dropdown border">
-          <div class="lang">
-            <h3>Skills</h3>
-            <img src="./assets/arrow2.png" alt="arrow" />
-          </div>
-        </div>
-      </main>
-    </section>
-    <footer class="contact-me" id="contact">
-      <main class="shapes">
-        <h1>Contact me</h1>
-        <p>
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it!
-        </p>
-        <form action="https://formspree.io/f/xvonlaqn" method="POST">
-          <input
-            type="text"
-            name="name"
-            placeholder="Lorem Ipsum"
-            maxlength="30"
-            class="input-col"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="loremipsum@gmail.com"
-            class="input-col"
-            required
-          />
-          <textarea
-            class="input-col comment"
-            name="message"
-            maxlength="500"
-            placeholder="Write your message here..."
-            required
-          ></textarea>
-          <button type="submit" class="btn-detail contact">Get in touch</button>
-        </form>
-      </main>
-    </footer>
+    </div>
+    <!-- the end -->
     <script src="index.js"></script>
+    <script src="popup.js"></script>
   </body>
 </html>
