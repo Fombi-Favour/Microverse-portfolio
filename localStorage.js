@@ -15,3 +15,10 @@ function dataSave() {
   };
   localStorage.setItem('userInfo', JSON.stringify(dataForm));
 }
+contactForm.addEventListener('click', dataSave);
+
+const item = JSON.parse(localStorage.getItem('userInfo'));
+
+fullName.value = item.name;
+emailAddr.value = item.email;
+message.value = item.message;
