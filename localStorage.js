@@ -1,4 +1,4 @@
-const contactForm = document.querySelector('.form-main');
+const contactForm = document.querySelector('#sumission');
 const fullName = document.querySelector('#client-name');
 const emailAddr = document.querySelector('#mail');
 const message = document.querySelector('#client-message');
@@ -15,5 +15,3 @@ function dataSave() {
   };
   localStorage.setItem('userInfo', JSON.stringify(dataForm));
 }
-
-contactForm.addEventListener('focusin', dataSave);
