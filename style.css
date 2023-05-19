@@ -502,26 +502,14 @@ nav a {
   border: 1px solid #cfd8dc;
   border-radius: 10px;
   padding: 0 10px;
-  margin-bottom: 12px;
+  margin: 12px;
   outline: none;
   font-size: 17px;
   font-weight: 400;
   color: #172b4d;
 }
 
-.input-col.invalid {
-  border: 2px solid #f51b1b;
-  background: #f7a1a1;
-}
 
-.input-col.valid {
-  border-color: #29e009;
-  background: #c3f7b5;
-}
-
-.input-col::placeholder {
-  color: #172b4d;
-}
 
 .comment {
   height: 170px;
@@ -1168,4 +1156,35 @@ nav a {
     padding: 12px;
     resize: none;
   }
+}
+/* form validation */
+.error {
+  width: 100%;
+  padding: 0;
+  display: block;
+  font-size: 80%;
+  color: white;
+  background-color: rgb(247, 7, 7);
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+.error.active {
+  padding: 0.3em;
+}
+
+input.invalid {
+ border: none;
+ width: 447px;
+height: 48px;
+background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-bottom: 12px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;    
+    
+
+
 }
