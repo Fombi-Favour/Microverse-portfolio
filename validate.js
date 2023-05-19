@@ -14,7 +14,7 @@ submi.addEventListener('click', (e) => {
   } else if (email.value === '' || email.value == null) {
     error.innerHTML = ' enter your email';
   } else if (email.value !== email.value.toLocaleLowerCase()) {
-    error.innerHTML = 'Please use lower case ONLY';
+    error.innerHTML = 'Invalid email! Please use lower case ONLY';
     email.className = 'invalid';
     error.className = 'error';
     error.className = 'error active';
