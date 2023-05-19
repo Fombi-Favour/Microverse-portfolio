@@ -509,6 +509,16 @@ nav a {
   color: #172b4d;
 }
 
+.input-col.invalid {
+  border: 2px solid #f51b1b;
+  background: #f7a1a1;
+}
+
+.input-col.valid {
+  border-color: #29e009;
+  background: #c3f7b5;
+}
+
 .input-col::placeholder {
   color: #172b4d;
 }
@@ -538,6 +548,18 @@ nav a {
   color: #5e6c84;
   font-weight: 500;
   letter-spacing: 0.03em;
+}
+
+.error {
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 12px;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.error.active {
+  background: #f51b1b;
 }
 
 @media only screen and (max-width: 768px) {
