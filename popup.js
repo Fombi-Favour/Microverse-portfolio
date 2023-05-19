@@ -95,8 +95,8 @@ details.forEach((detail) => {
 function showDetails(Id) {
   Title.textContent = details[Id].title;
   Author.textContent = details[Id].author;
-  spec1.innerHTML = details.spec;
-  spec2.innerHTML = details.Year;
+  spec1.innerHTML = details[Id].spec;
+  spec2.innerHTML = details[Id].Year;
   pic.src = details[Id].image;
   desc.textContent = details[Id].description;
   tag.innerHTML = details[Id].technologies.map((tags) => `<li>${tags}</li>`).join('');
