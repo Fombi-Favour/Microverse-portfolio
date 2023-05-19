@@ -72,6 +72,9 @@ nav a {
 .tag {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
 }
 
 .tag li {
@@ -240,13 +243,6 @@ nav a {
   color: #344563;
 }
 
-.tag {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  gap: 8px;
-}
-
 .btn-see-detail {
   width: 126px;
   height: 48px;
@@ -305,7 +301,7 @@ nav a {
   display: flex;
   flex-direction: column;
   padding: 9px 15px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
 }
 
 #pop {
@@ -334,8 +330,22 @@ nav a {
   flex-direction: column;
 }
 
-.spec {
-  margin-left: -7px;
+.specs {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin-left: -5%;
+  margin-top: -10px;
+}
+
+.specs li {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a869a;
+}
+
+.specs .author {
+  color: #344563;
 }
 
 .main1 {
@@ -375,7 +385,8 @@ nav a {
   gap: 20px;
 }
 
-.live, .source {
+.live,
+.source {
   width: 250px;
   text-decoration: none;
   display: flex;
@@ -676,7 +687,7 @@ nav a {
   #pop.active {
     top: 2%;
   }
-  
+
   .main-text {
     margin-bottom: 15px;
   }
@@ -685,14 +696,14 @@ nav a {
     width: 470px;
     height: 300px;
   }
-  
+
   .block {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
-  
+
   .scroll {
     width: 800px;
     padding: 8px 10px;
@@ -705,20 +716,21 @@ nav a {
   .other-side {
     width: 258px;
   }
-  
+
   .line {
     border: 1px solid #ebecf0;
     margin: 10px 20px;
   }
-  
+
   .actions {
     display: flex;
-    padding: 0px;
+    padding: 0;
     justify-content: center;
     gap: 10px;
   }
-  
-  .live, .source {
+
+  .live,
+  .source {
     width: 500px;
     font-size: 14px;
     display: flex;
@@ -727,10 +739,12 @@ nav a {
     gap: 4px;
   }
 
-  .live img, .source img {
+  .live img,
+  .source img {
     width: 24px;
     height: 24px;
   }
+
   /************* the end *****************/
 
   .about-me {
@@ -947,7 +961,7 @@ nav a {
   #pop.active {
     top: 2%;
   }
-  
+
   .main-text {
     margin-bottom: 6px;
   }
@@ -956,14 +970,14 @@ nav a {
     width: 570px;
     height: 350px;
   }
-  
+
   .block {
     margin-top: 9px;
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
-  
+
   .scroll {
     width: 800px;
     padding: 5px 10px;
@@ -976,20 +990,21 @@ nav a {
   .other-side {
     width: 258px;
   }
-  
+
   .line {
     border: 1px solid #ebecf0;
     margin: 10px 20px;
   }
-  
+
   .actions {
     display: flex;
-    padding: 0px;
+    padding: 0;
     justify-content: center;
     gap: 10px;
   }
-  
-  .live, .source {
+
+  .live,
+  .source {
     width: 500px;
     font-size: 14px;
     display: flex;
@@ -998,10 +1013,12 @@ nav a {
     gap: 4px;
   }
 
-  .live img, .source img {
+  .live img,
+  .source img {
     width: 24px;
     height: 24px;
   }
+
   /************* the end *****************/
 
   .about-me {
