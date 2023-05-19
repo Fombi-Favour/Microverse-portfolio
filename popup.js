@@ -117,3 +117,7 @@ Close.addEventListener('click', () => {
 Live.addEventListener('click', () => {
   window.open(details.live);
 });
+
+Source.addEventListener('click', () => {
+  window.open(details.source);
+});
