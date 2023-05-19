@@ -3,7 +3,9 @@ const blur = document.getElementById('blur');
 const popup = document.getElementById('pop');
 const Title = document.querySelector('.title');
 const Author = document.querySelector('.author');
-const specs = document.querySelector('.specs');
+const dot = document.getElementsByClassName('dot');
+// const [spec1] = document.querySelector('.spec1');
+// const [spec2] = document.querySelector('.spec2');
 const pic = document.querySelector('.project-image');
 const desc = document.querySelector('.description');
 const tag = document.querySelector('.tag');
@@ -90,7 +92,8 @@ details.forEach((detail) => {
 function showDetails(Id) {
   Title.textContent = details[Id].title;
   Author.textContent = details[Id].author;
-  // specs.innerHTML = details[Id].spec.map((roles) => `<h3>${roles}</h3>`).join('');
+  // spec1.innerHTML = details[Id].spec;
+  // spec2.innerHTML = details[Id].spec;
   pic.src = details[Id].image;
   desc.textContent = details[Id].description;
   tag.innerHTML = details[Id].technologies.map((tags) => `<li>${tags}</li>`).join('');
@@ -104,8 +107,6 @@ const seeProject = document.querySelectorAll('.btn-see-detail');
 seeProject.forEach((button) => button.addEventListener('click', () => {
   showDetails(Number(button.id));
 }));
-
-console.log(seeProject);
 
 const Close = document.querySelector('.close');
 Close.addEventListener('click', () => {
