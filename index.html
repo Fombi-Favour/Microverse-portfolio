@@ -171,7 +171,7 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it!
           </p>
-          <form action="https://formspree.io/f/xvonlaqn" method="POST">
+          <form action="https://formspree.io/f/xvonlaqn" method="POST" class="form-main">
             <input
               type="text"
               name="name"
@@ -179,13 +179,16 @@
               maxlength="30"
               class="input-col"
               required
+              id="client-name"
             />
             <input
               type="email"
               name="email"
+              id="mail"
               placeholder="loremipsum@gmail.com"
               class="input-col"
               required
+             
             />
             <textarea
               class="input-col comment"
@@ -193,10 +196,12 @@
               maxlength="500"
               placeholder="Write your message here..."
               required
+              id="client-message"
             ></textarea>
-            <button type="submit" class="btn-detail contact">
+            <button type="submit" class="btn-detail contact" id="sumission">
               Get in touch
             </button>
+            <span class="error" aria-live="polite"></span>
           </form>
         </main>
       </footer>
@@ -244,5 +249,6 @@
     <!-- the end -->
     <script src="index.js"></script>
     <script src="popup.js"></script>
+    <script src="validate.js"></script>
   </body>
 </html>
