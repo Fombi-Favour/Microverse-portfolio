@@ -8,6 +8,13 @@ body {
   background: #e5e5e5;
 }
 
+.blurred#blur.active {
+  filter: blur(3px);
+  background: #c1c7d0;
+  pointer-events: none;
+  user-select: none;
+}
+
 header {
   padding: 10px 0;
   background: #fff;
@@ -60,6 +67,14 @@ nav a {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.tag {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
 }
 
 .tag li {
@@ -212,7 +227,7 @@ nav a {
   color: #344563;
 }
 
-.project-row .content {
+.content {
   display: flex;
   margin-top: -30px;
   font-size: 13px;
@@ -228,11 +243,28 @@ nav a {
   color: #344563;
 }
 
-.tag {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  gap: 8px;
+.btn-see-detail {
+  width: 126px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-see-detail:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn-see-detail:active {
+  background: #2230d2;
 }
 
 .btn-detail {
@@ -258,6 +290,112 @@ nav a {
 .btn-detail:active {
   background: #2230d2;
 }
+
+/********** Pop-up detail page *********/
+.pop-up {
+  width: 323px;
+  height: max-content;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 9px 15px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+#pop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 10%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#pop.active {
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.specs {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin-left: -5%;
+  margin-top: -10px;
+}
+
+.specs li {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a869a;
+}
+
+.specs .author {
+  color: #344563;
+}
+
+.main1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main1 img {
+  cursor: pointer;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll {
+  padding: 2px 0;
+  margin-top: 10px;
+}
+
+.scroll p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.line {
+  border: 1px solid #ebecf0;
+  margin: 7px 30px;
+}
+
+.actions {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.live,
+.source {
+  width: 250px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*********** the end *********/
 
 .about-me {
   background: #fff;
@@ -541,6 +679,80 @@ nav a {
     margin-top: 28px;
   }
 
+  /************* pop-up window *****************/
+  .pop-up {
+    width: 716px;
+  }
+
+  #pop.active {
+    top: 2%;
+  }
+
+  .main-text {
+    margin-bottom: 15px;
+  }
+
+  .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: -3% 0;
+  }
+
+  .project-image {
+    width: 75%;
+  }
+
+  .block {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .scroll {
+    width: 800px;
+    padding: 8px 10px;
+  }
+
+  .scroll p {
+    font-size: 16px;
+  }
+
+  .other-side {
+    width: 258px;
+  }
+
+  .line {
+    border: 1px solid #ebecf0;
+    margin: 10px 20px;
+  }
+
+  .actions {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .live,
+  .source {
+    width: 500px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .live img,
+  .source img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /************* the end *****************/
+
   .about-me {
     min-height: 80vh;
     background: #fff;
@@ -746,6 +958,80 @@ nav a {
   .right p {
     font-size: 16px;
   }
+
+  /************* pop-up window *****************/
+  .pop-up {
+    width: 956px;
+  }
+
+  #pop.active {
+    top: 2%;
+  }
+
+  .main-text {
+    margin-bottom: 6px;
+  }
+
+  .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: -10px 0;
+  }
+
+  .project-image {
+    width: 55%;
+  }
+
+  .block {
+    margin-top: 9px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .scroll {
+    width: 800px;
+    padding: 5px 10px;
+  }
+
+  .scroll p {
+    font-size: 16px;
+  }
+
+  .other-side {
+    width: 258px;
+  }
+
+  .line {
+    border: 1px solid #ebecf0;
+    margin: 10px 20px;
+  }
+
+  .actions {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .live,
+  .source {
+    width: 500px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .live img,
+  .source img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /************* the end *****************/
 
   .about-me {
     min-height: 80vh;
