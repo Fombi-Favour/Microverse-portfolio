@@ -14,3 +14,8 @@ menu.addEventListener('click', () => {
 close.addEventListener('click', () => {
   hideMenu();
 });
+
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('nav');
+  navbar.classList.toggle('sticky', window.scrollY > 0);
+});
