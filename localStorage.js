@@ -1,4 +1,4 @@
-const contactForm = document.querySelector('#sumission');
+const contactForm = document.querySelector('.form-main');
 const fullName = document.querySelector('#client-name');
 const emailAddr = document.querySelector('#mail');
 const message = document.querySelector('#client-message');
@@ -15,10 +15,15 @@ function dataSave() {
   };
   localStorage.setItem('userInfo', JSON.stringify(dataForm));
 }
-contactForm.addEventListener('click', dataSave);
+contactForm.addEventListener('change', dataSave);
 
-const item = JSON.parse(localStorage.getItem('userInfo'));
+window.onload = () => {
+  let item = localStorage.getItem('userInfo');
+  item = JSON.parse(item);
 
-fullName.value = item.name;
-emailAddr.value = item.email;
-message.value = item.message;
+  if (item) {
+    fullName.value = item.name;
+    emailAddr.value = item.email;
+    message.value = item.message;
+  }
+};
