@@ -21,10 +21,42 @@ window.addEventListener('scroll', () => {
 });
 
 // typing effect
-const typingEffect = new Typed(".typedText", {
-  strings: ["Full Stack Web Developer", "Mobile Developer", "Windows Desktop Developer", "Software Engineer", "Mentor"],
+const typingEffect = new Typed('.typedText', {
+  strings: ['Full Stack Web Developer', 'Mobile Developer', 'Windows Desktop Developer', 'Software Engineer', 'Mentor'],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
-  backDelay: 2000
-})
+  backDelay: 2000,
+});
+
+// accordion effect
+const accordionContent = document.querySelectorAll('.accordion-content');
+
+accordionContent.forEach((item, index) => {
+  const header = item.querySelector('p');
+  header.addEventListener('click', () => {
+    item.classList.toggle('open');
+
+    const description = item.querySelector('.description');
+    if (item.classList.contains('open')) {
+      description.style.height = `${description.scrollHeight}px`;
+      item.querySelector('i').classList.replace('fa-angle-right', 'fa-angle-down');
+    } else {
+      description.style.height = '0px';
+      item.querySelector('i').classList.replace('fa-angle-down', 'fa-angle-right');
+    }
+    removeOpen(index);
+  });
+});
+
+function removeOpen(index1) {
+  accordionContent.forEach((item2, index2) => {
+    if (index1 != index2) {
+      item2.classList.remove('open');
+
+      const des = item2.querySelector('.description');
+      des.style.height = '0px';
+      item2.querySelector('i').classList.replace('fa-minus', 'fa-plus');
+    }
+  });
+}
