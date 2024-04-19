@@ -5,10 +5,17 @@
 }
 
 /********************* tablet style *********************/
+.blurred#blur.active {
+  filter: blur(4px);
+  background: #c1c7d0;
+  pointer-events: none;
+  user-select: none;
+}
+
 header {
   height: 45vh;
-  background: rgb(184,180,232);
-  background: linear-gradient(57deg, rgba(184,180,232,1) 0%, rgba(200,226,153,1) 35%, rgba(236,211,40,1) 63%, rgba(177,238,147,1) 88%);
+  background: rgb(184, 180, 232);
+  background: linear-gradient(57deg, rgba(184, 180, 232, 1) 0%, rgba(200, 226, 153, 1) 35%, rgba(236, 211, 40, 1) 63%, rgba(177, 238, 147, 1) 88%);
   border-bottom-left-radius: 100px;
 }
 
@@ -62,8 +69,8 @@ nav.sticky {
   content: '';
   width: 0;
   height: 2px;
-  background: rgb(74,61,237);
-  background: linear-gradient(60deg, rgba(74,61,237,1) 0%, rgba(149,236,117,1) 35%, rgba(43,183,228,1) 63%, rgba(231,242,49,1) 85%);
+  background: rgb(74, 61, 237);
+  background: linear-gradient(60deg, rgba(74, 61, 237, 1) 0%, rgba(149, 236, 117, 1) 35%, rgba(43, 183, 228, 1) 63%, rgba(231, 242, 49, 1) 85%);
   display: block;
   margin: auto;
   transition: 0.6s;
@@ -145,6 +152,7 @@ nav.sticky {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+
   /* width: fit-content; */
 }
 
@@ -205,9 +213,10 @@ nav.sticky {
 }
 
 .btn-see-detail {
-  width: 126px;
+  width: fit-content;
   height: 48px;
   background: #fff;
+  padding: 0 8px;
   border: 1px solid #6070ff;
   border-radius: 9px;
   font-size: 18px;
@@ -230,8 +239,263 @@ nav.sticky {
 
 /****** end project style ******/
 
+/****** about style ******/
+.about-me {
+  margin-top: 5rem;
+  border-top-right-radius: 60px;
+  box-shadow: 0 8px 16px rgba(70, 70, 70, 0.24);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  grid-gap: 5rem;
+  padding: 14px 17px;
+}
+
+.accordion {
+  max-width: 530px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.accordion .accordion-content {
+  margin: 10px 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.accordion-content.open {
+  padding-bottom: 10px;
+}
+
+.accordion-content p {
+  display: flex;
+  min-height: 50px;
+  padding: 0 15px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+}
+
+.accordion-content.open p {
+  max-height: 20rem;
+}
+
+.accordion-content p span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.accordion-content .description {
+  height: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 15px;
+  list-style-type: none;
+  transition: all 0.5s linear;
+}
+
+.description li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  background: #f7f7f9;
+  border-radius: 12px;
+  padding: 10px 8px;
+}
+
+.description li span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #253858;
+}
+
+/****** end about style ******/
+
+/****** contact style ******/
+.contact-me {
+  background: rgb(250, 244, 56);
+  background: linear-gradient(37deg, rgba(250, 244, 56, 0.4) 0%, rgba(158, 255, 91, 0.8) 28%, rgba(46, 227, 249, 0.1) 59%, rgba(56, 192, 252, 0.5) 85%);
+  border-top-left-radius: 100px;
+  padding: 3rem 2rem;
+}
+
+.shapes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shapes h1 {
+  font-size: 1.925rem;
+  font-weight: 700;
+}
+
+.shapes p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.shapes form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 14px;
+  gap: 6px;
+}
+
+.input-col {
+  width: 450px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-bottom: 12px;
+  outline: none;
+  font-size: 17px;
+  font-weight: 400;
+  color: #172b4d;
+}
+
+.comment {
+  height: 170px;
+  padding: 12px;
+  resize: none;
+}
+
+.error {
+  width: 100%;
+  font-size: 0.905rem;
+  color: #fff;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 8px 0 0 0;
+}
+
+.error.active {
+  background: #f51b1b;
+  padding: 0.3rem;
+}
+
+/****** end contact style ******/
+
+/****** pop-up detail style ******/
+#pop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 35%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#pop.active {
+  top: 10%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.pop-up {
+  width: 720px;
+  height: max-content;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 18px;
+  display: flex;
+  padding: 9px 14px;
+  flex-direction: column;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.main1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.specs {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.specs li {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a869a;
+}
+
+.specs .author {
+  color: #344563;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.scroll {
+  width: 800px;
+  padding: 5px 10px;
+}
+
+.scroll p {
+  font-size: 16px;
+}
+
+.other-side {
+  width: 258px;
+}
+
+.line {
+  border: 1px solid #ebecf0;
+  margin: 10px 20px;
+}
+
+.actions {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  gap: 10px;
+}
+
+.live,
+.source {
+  width: 500px;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.live img,
+.source img {
+  width: 24px;
+  height: 24px;
+}
+
 /********************* mobile style *********************/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   header {
     height: 100vh;
     border-bottom-left-radius: 70px;
@@ -265,6 +529,10 @@ nav.sticky {
     margin-top: 2rem;
     padding: 0 15px;
     list-style: none;
+  }
+
+  #close {
+    color: #fff;
   }
 
   .nav-link ul li {
@@ -319,10 +587,80 @@ nav.sticky {
   .project-row:nth-child(2n) .left {
     order: 0;
   }
+
+  /****** end project style ******/
+
+  /****** about style ******/
+  .about-me {
+    margin-top: 5rem;
+    border-top-right-radius: 60px;
+    box-shadow: 0 8px 16px rgba(70, 70, 70, 0.24);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-gap: 5rem;
+    padding: 14px 17px;
+  }
+
+  /****** end about style ******/
+
+  /****** contact style ******/
+  .shapes p {
+    font-size: 16px;
+  }
+
+  .input-col {
+    width: 330px;
+  }
+
+  /****** end contact style ******/
+
+  /****** pop-up detail style ******/
+  .pop-up {
+    width: 330px;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scroll {
+    padding: 2px 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .scroll .pop-desc {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .line {
+    border: 1px solid #ebecf0;
+    margin: 7px 30px;
+  }
+
+  .actions {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .live,
+  .source {
+    width: 250px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
 /********************* desktop style *********************/
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
   header {
     height: 83vh;
     border-bottom-left-radius: 100px;
