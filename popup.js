@@ -74,15 +74,17 @@ details.forEach((detail) => {
         <div class="right">
           <h1>${detail.title}</h1>
           <div class="content">
-            <h3 class="author">${detail.author}</h3>
+            <h5 class="author">${detail.author}</h5>
             <img src="./assets/Counter.svg" alt="dot" />
-            <h3>${detail.spec}</h3>
+            <h5>${detail.spec}</h5>
             <img src="./assets/Counter.svg" alt="dot" />
-            <h3>${detail.Year}</h3>
+            <h5>${detail.Year}</h5>
           </div>
-          <p>
-            ${detail.description}
-          </p>
+          <div class="desc">
+            <p>
+              ${detail.description}
+            </p>
+          </div>
           <ul class="tag">
             ${detail.technologies.map((tag) => `<li>${tag}</li>`).join('')}
           </ul>

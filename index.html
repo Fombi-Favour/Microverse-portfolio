@@ -10,42 +10,50 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
-    <title>Microverse Portfolio</title>
+    <title>Favour's Portfolio</title>
   </head>
   <body>
     <div id="blur" class="blurred">
       <header>
         <nav>
-          <a href="#" id="logo">My Logo</a>
-          <div class="link">
-            <div class="nav-link" id="navLink">
-              <img src="assets/close.png" id="close" alt="close" />
-              <ul>
-                <li id="Portfolio" onclick="hideMenu()">
-                  <a href="#portfolio">Portfolio</a>
-                </li>
-                <li id="About-me" onclick="hideMenu()">
-                  <a href="#about">About</a>
-                </li>
-                <li id="Contact-me" onclick="hideMenu()">
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
+          <a href="#" id="logo">
+            <img src="/assets/logo.png" alt="logo">
+          </a>
+          <div class="nav-link" id="navLink">
+            <div class="close-pos">
+              <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;" id="close"></i>
             </div>
-            <img src="./assets/menu.png" id="menu" alt="logo" />
+            <ul>
+              <li id="Portfolio" onclick="hideMenu()">
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li id="About-me" onclick="hideMenu()">
+                <a href="#about">About</a>
+              </li>
+              <li id="Contact-me" onclick="hideMenu()">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-pos">
+            <i class="fa-solid fa-bars-staggered fa-xl" style="color: #114fbb;" id="menu"></i>
           </div>
         </nav>
         <div class="background">
           <div class="intro">
             <div class="text">
-              <h1>
-                I'm Favour. <br />
-                Glad to see you!
-              </h1>
+              <h2>
+                Magnus-Favour Fombi
+              </h2>
+              <p>
+                I'm a 
+                <span class="typedText"></span>
+              </p>
             </div>
             <p class="intro-text">
-              I’m a software developer! I can help you build a product , feature
+              I’m an experienced software developer! I can help you build a product, feature
               or website Look through some of my work and experience! If you
               like what you see and have a project you need coded, don’t
               hesitate to contact me.
@@ -55,27 +63,22 @@
               <h5>LET'S CONNECT</h5>
               <ul class="social-icon">
                 <li>
-                  <a href="#">
-                    <img src="./assets/twitter.svg" alt="twitter" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/fombi-favour/" target="_blank">
                     <img src="./assets/Linkedin icon.svg" alt="Linkedin" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://medium.com/@fombifavour" target="_blank">
                     <img src="./assets/medium.svg" alt="medium" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://github.com/Fombi-Favour" target="_blank">
                     <img src="./assets/github.svg" alt="github" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://wellfound.com/u/fombi-favour" target="_blank">
                     <img src="./assets/angellist.svg" alt="angellist" />
                   </a>
                 </li>
@@ -247,6 +250,7 @@
       </div>
     </div>
     <!-- the end -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="index.js"></script>
     <script src="popup.js"></script>
     <script src="validate.js"></script>
