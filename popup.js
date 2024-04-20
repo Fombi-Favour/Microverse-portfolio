@@ -1,7 +1,7 @@
 const projects = document.querySelector('.projects');
 const blur = document.getElementById('blur');
 const popup = document.getElementById('pop');
-const Title = document.querySelector('.title');
+const Name = document.querySelector('.title');
 const Author = document.querySelector('.author');
 const spec1 = document.querySelector('.spec1');
 const spec2 = document.querySelector('.spec2');
@@ -13,7 +13,7 @@ const Source = document.querySelector('.source');
 const details = [
   {
     id: 0,
-    title: 'To-Do-List',
+    name: 'To-Do-List',
     image: './assets/todo.png',
     author: 'FAVOUR',
     spec: 'Frontend Dev',
@@ -26,7 +26,7 @@ const details = [
   },
   {
     id: 1,
-    title: 'Leaderboard',
+    name: 'Leaderboard',
     image: './assets/leaderboard.png',
     author: 'FAVOUR',
     spec: 'Frontend Dev',
@@ -39,46 +39,46 @@ const details = [
   },
   {
     id: 2,
-    title: 'PennyWise',
+    name: 'PennyWise',
     image: './assets/penywise.png',
     author: 'FAVOUR',
     spec: 'Backend Dev',
     Year: '2024',
     description:
-      "PennyWise Budget App is a a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
+      'PennyWise Budget App is a a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
     technologies: ['HTML', 'Ruby on Rails', 'CSS', 'PostgreSQL'],
     live: 'https://pennywise-tmwb.onrender.com',
     source: 'https://github.com/Fombi-Favour/budget-app-rb',
   },
   {
     id: 3,
-    title: 'Book my Doctor',
+    name: 'Book my Doctor',
     image: './assets/bookdoc.png',
-    author: 'FAVOUR and al.',
+    author: 'FAVOUR and al',
     spec: 'Full Stack Dev',
     Year: '2024',
     description:
       'Book my doctor is a full stack web application designed for users to view, manage and also appoint a doctor.',
     technologies: ['ReactJS', 'Ruby on Rails', 'TailwindCSS', 'PostgreSQL', 'JWT'],
-    live: 'https://book-my-doctor-ui-wngd.onrender.com/doctors',
+    live: 'https://book-my-doctor-ui-wngd.onrender.com',
     source: 'https://github.com/yusufyusie/Book-my-Doctor-UI',
   },
   {
     id: 4,
-    title: 'Pokémon',
+    name: 'PokémonAPI (PokéApi)',
     image: './assets/pokemon.png',
-    author: 'FAVOUR and al.',
+    author: 'FAVOUR and al',
     spec: 'Frontend Dev',
     Year: '2023',
     description:
-      'Pokémon is a project where we utilize our HTML, CSS, and JavaScript skills to create a platform that interacts with the pokemon API. It enables users to fetch pokemons, view abilities and habitats, post comments, and express their likes. Furthermore, the platform allows users to update the base API with their comments and likes, providing an interactive and engaging experience for pokemon enthusiasts.',
+      'PokéApi is a project where we utilize our HTML, CSS, and JavaScript skills to create a platform that interacts with the pokemon API. It enables users to fetch pokemons, view abilities and habitats, post comments, and express their likes. Furthermore, the platform allows users to update the base API with their comments and likes, providing an interactive and engaging experience for pokemon enthusiasts.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'Jest'],
     live: 'https://pokeapi-02.netlify.app/',
     source: 'https://github.com/Fombi-Favour/microverse-capstone-2',
   },
   {
     id: 5,
-    title: 'Game Market',
+    name: 'Game Market',
     image: './assets/gamestore.png',
     author: 'FAVOUR.',
     spec: 'Frontend Dev',
@@ -91,9 +91,9 @@ const details = [
   },
   {
     id: 6,
-    title: 'Space Travelers\'',
+    name: 'Space Travelers\'',
     image: './assets/spacetraveler.png',
-    author: 'FAVOUR.',
+    author: 'FAVOUR and al',
     spec: 'Frontend Dev',
     Year: '2023',
     description:
@@ -104,9 +104,9 @@ const details = [
   },
   {
     id: 7,
-    title: 'GDC 2022',
+    name: 'GDC 2022',
     image: './assets/gdc.png',
-    author: 'FAVOUR.',
+    author: 'FAVOUR',
     spec: 'Frontend Dev',
     Year: '2023',
     description:
@@ -124,7 +124,7 @@ details.forEach((detail) => {
           <img src="${detail.image}" alt="project-1" />
         </div>
         <div class="right">
-          <h1>${detail.title}</h1>
+          <h1>${detail.name}</h1>
           <div class="content">
             <h5 class="author">${detail.author}</h5>
             <img src="./assets/Counter.svg" alt="dot" />
@@ -147,7 +147,7 @@ details.forEach((detail) => {
 });
 
 function showDetails(Id) {
-  Title.textContent = details[Id].title;
+  Name.textContent = details[Id].name;
   Author.textContent = details[Id].author;
   spec1.innerHTML = details[Id].spec;
   spec2.innerHTML = details[Id].Year;
@@ -171,10 +171,10 @@ Close.addEventListener('click', () => {
   popup.classList.toggle('active');
 });
 
-Live.addEventListener('click', () => {
-  window.open(details.live);
-});
+// Live.addEventListener('click', () => {
+//   window.open(details.live);
+// });
 
-Source.addEventListener('click', () => {
-  window.open(details.source);
-});
+// Source.addEventListener('click', () => {
+//   window.open(details.source);
+// });
