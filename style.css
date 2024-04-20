@@ -173,6 +173,10 @@ nav.sticky {
   scale: 1.05;
 }
 
+.left img {
+  width: 350px;
+}
+
 .project-row:nth-child(2n) .left {
   order: 1;
 }
@@ -670,4 +674,9 @@ nav.sticky {
   .project-row {
     width: 60rem;
   }
+
+  .left img {
+    width: 400px;
+  }
+  
 }
