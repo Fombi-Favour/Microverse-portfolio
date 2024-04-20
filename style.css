@@ -97,6 +97,13 @@ nav.sticky {
   padding-bottom: 10px;
 }
 
+.greet {
+  padding: 0;
+  margin: 1rem 0 0.4rem 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .text h2 {
   font-size: 2.325rem;
 }
@@ -255,6 +262,31 @@ nav.sticky {
   padding: 14px 17px;
 }
 
+.resume {
+  width: fit-content;
+  background: #fff;
+  padding: 10px 8px;
+  border: 1px solid #6070ff;
+  border-radius: 9px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.resume:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.resume:active {
+  background: #2230d2;
+}
+
 .accordion {
   max-width: 530px;
   width: 100%;
@@ -311,12 +343,21 @@ nav.sticky {
   background: #f7f7f9;
   border-radius: 12px;
   padding: 10px 8px;
+  transition: 0.6s;
+}
+
+.description li:hover {
+  scale: 1.23;
 }
 
 .description li span {
   font-size: 15px;
   font-weight: 500;
   color: #253858;
+}
+
+.description li img {
+  width: 50px;
 }
 
 /****** end about style ******/
@@ -404,7 +445,7 @@ nav.sticky {
 }
 
 #pop.active {
-  top: 10%;
+  top: 5%;
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
@@ -448,6 +489,10 @@ nav.sticky {
 
 .specs .author {
   color: #344563;
+}
+
+.project-image {
+  width: 40rem;
 }
 
 .block {
@@ -622,6 +667,14 @@ nav.sticky {
   /****** pop-up detail style ******/
   .pop-up {
     width: 330px;
+  }
+
+  #pop.active {
+    top: 3%;
+  }
+
+  .project-image {
+    width: 15rem;
   }
 
   .block {
