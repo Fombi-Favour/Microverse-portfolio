@@ -35,6 +35,7 @@ nav {
 
 nav.sticky {
   padding: 8px 16px;
+  margin-top: -1px;
   margin-left: -28px;
   background: #fff;
 }
@@ -498,20 +499,21 @@ nav.sticky {
 .block {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 12px;
 }
 
 .scroll {
-  width: 800px;
+  width: 600px;
   padding: 5px 10px;
 }
 
 .scroll p {
   font-size: 16px;
+  line-height: 24px;
 }
 
 .other-side {
-  width: 258px;
+  width: 265px;
 }
 
 .line {
@@ -528,19 +530,41 @@ nav.sticky {
 
 .live,
 .source {
-  width: 500px;
-  font-size: 14px;
-  text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 4px;
+  gap: 5px;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 9px;
+  transition: 0.5s;
+}
+
+.live:hover,
+.source:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24); 
+}
+
+.live:active,
+.source:active {
+  background: #2230d2;
+}
+
+.live span,
+.source span {
+  white-space: nowrap;
+  font-weight: 500;
 }
 
 .live img,
 .source img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 /********************* mobile style *********************/
@@ -726,6 +750,10 @@ nav.sticky {
   /****** project style ******/
   .project-row {
     width: 60rem;
+  }
+
+  .scroll p {
+    font-size: 14px;
   }
 
   .left img {
